@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}    
+<main class="container">
+
+    <div class="starter-template text-center py-5 px-3">
+        <h1>Начальный шаблон Bootstrap</h1>
+        {% for post in posts %}
+        <div><p class="lead">{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+        {% endfor %}
+     
+    </div>
+  
+  </main>
+    
+{% endblock %}
